@@ -12,9 +12,9 @@ class Message
      */
     const RPC_VERSION = '2.0';
     /**
-     * @var string
+     * @var int
      */
-    public $id = '';
+    public $id = 1;
     /**
      * @var string
      */
@@ -30,10 +30,10 @@ class Message
     public function get()
     {
         return [
+            'id'      => $this->id,
             'jsonrpc' => self::RPC_VERSION,
             'method'  => $this->method,
-            'params'  => $this->params,
-            'id'      => $this->id,
+            'params'  => (object)$this->params,
         ];
     }
 
@@ -43,12 +43,7 @@ class Message
      */
     public function getSigned(string $key): string
     {
-        $data = [
-            'jsonrpc' => self::RPC_VERSION,
-            'method'  => $this->method,
-            'params'  => $this->params,
-            'id'      => $this->id,
-        ];
+        $data = $this->get();
 
         return hash_hmac(
             'sha512',
