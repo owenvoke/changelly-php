@@ -10,9 +10,9 @@ class Changelly
     /**
      * The base URI for the Changelly main site.
      */
-    public const BASE_URI = 'http://changelly.com';
+    public const BASE_URI = 'https://changelly.com';
     /**
      * The base URI for the Changelly API.
      */
-    public const API_BASE_URI = 'http://api.changelly.com';
+    public const API_BASE_URI = 'https://api.changelly.com';
 }
