@@ -33,4 +33,17 @@ class Currencies
 
         return $this->call($message);
     }
+
+    public function exchangeAmount(string $from, string $to, float $amount)
+    {
+        $message = new Message();
+        $message->method = 'getExchangeAmount';
+        $message->params = [
+            'from'   => $from,
+            'to'     => $to,
+            'amount' => $amount,
+        ];
+
+        return $this->call($message);
+    }
 }
