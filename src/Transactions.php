@@ -15,4 +15,15 @@ class Transactions
 
         return $this->call($message);
     }
+
+    public function status(string $transactionId)
+    {
+        $message = new Message();
+        $message->method = 'getStatus';
+        $message->params = [
+            'id' => $transactionId,
+        ];
+
+        return $this->call($message);
+    }
 }
