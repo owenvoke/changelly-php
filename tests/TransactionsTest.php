@@ -51,4 +51,14 @@ class TransactionsTest extends TestCase
         $this->assertObjectHasAttribute('currencyFrom', $resultFirst);
         $this->assertObjectHasAttribute('currencyTo', $resultFirst);
     }
+
+    public function testCanGetStatus()
+    {
+        $result = $this->transactions->status('aa744c63d736');
+
+        $this->assertInstanceOf(\stdClass::class, $result);
+        $this->assertObjectHasAttribute('id', $result);
+        $this->assertObjectHasAttribute('result', $result);
+        $this->assertInternalType('string', $result->result);
+    }
 }
