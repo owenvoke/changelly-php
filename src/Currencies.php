@@ -21,4 +21,16 @@ class Currencies
 
         return $this->call($message);
     }
+
+    public function minimumAmount(string $from, string $to)
+    {
+        $message = new Message();
+        $message->method = 'getMinAmount';
+        $message->params = [
+            'from' => $from,
+            'to'   => $to,
+        ];
+
+        return $this->call($message);
+    }
 }
