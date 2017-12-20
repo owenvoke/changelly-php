@@ -25,6 +25,19 @@ class Message
     public $params = [];
 
     /**
+     * @return array
+     */
+    public function get()
+    {
+        return [
+            'jsonrpc' => self::RPC_VERSION,
+            'method'  => $this->method,
+            'params'  => $this->params,
+            'id'      => $this->id,
+        ];
+    }
+
+    /**
      * @param string $key
      * @return string
      */
