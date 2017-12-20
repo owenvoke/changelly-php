@@ -77,4 +77,13 @@ class CurrenciesTest extends TestCase
         $this->assertInternalType('string', $result->result);
         $this->assertTrue(is_numeric($result->result));
     }
+
+    public function testCanGetExchangeAmount()
+    {
+        $result = $this->currencies->exchangeAmount('btc', 'etc', 1.0);
+
+        $this->assertObjectHasAttribute('result', $result);
+        $this->assertInternalType('string', $result->result);
+        $this->assertTrue(is_numeric($result->result));
+    }
 }
