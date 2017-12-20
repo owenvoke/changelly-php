@@ -68,4 +68,13 @@ class CurrenciesTest extends TestCase
         $this->assertObjectHasAttribute('fullName', $resultFirst);
         $this->assertObjectHasAttribute('enabled', $resultFirst);
     }
+
+    public function testCanGetMinimumAmount()
+    {
+        $result = $this->currencies->minimumAmount('btc', 'etc');
+
+        $this->assertObjectHasAttribute('result', $result);
+        $this->assertInternalType('string', $result->result);
+        $this->assertTrue(is_numeric($result->result));
+    }
 }
