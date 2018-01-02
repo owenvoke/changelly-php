@@ -27,7 +27,69 @@ $ composer require pxgamer/changelly
 
 ## Usage
 
-...
+**Creating instances**
+
+```php
+use pxgamer\Changelly\{Currencies,Transactions,Message};
+
+$currencies = new Currencies();
+$transactions = new Transactions();
+```
+
+**Retrieve an array of currency names**
+
+Retrieve an array of strings stating the `name` of the currency.
+
+```php
+$currencies->get();
+```
+
+**Retrieve an array of currency `stdClass` instances**
+
+These contain the following information:
+
+- name
+- fullName
+- enabled
+
+```php
+$currencies->getFull();
+```
+
+**Retrieve the minimum amount required to convert between 2 currencies**
+
+```php
+$currencies->minimumAmount('btc', 'etc');
+```
+
+**Retrieve the estimated exchange value between 2 currencies**
+
+```php
+$currencies->exchangeAmount('btc', 'etc', 1.0);
+```
+
+**Retrieve an array of transactions**
+
+Returns an array of transaction `stdClass` instances containing the following values:
+
+- id
+- createdAt
+- payinConfirmations
+- status
+- currencyFrom
+- currencyTo
+
+```php
+$transactions->get();
+```
+
+**Retrieve a single transaction's status by ID**
+
+Returns a transaction status string.
+
+```php
+$transactions->status('id');
+```
 
 ## Change log
 
