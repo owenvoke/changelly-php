@@ -6,6 +6,7 @@
 [![Style CI][ico-styleci]][link-styleci]
 [![Code Coverage][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpxgamer%2Fchangelly.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpxgamer%2Fchangelly?ref=badge_shield)
 
 A PHP wrapper for the [Changelly] API.
 
@@ -134,3 +135,6 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [link-downloads]: https://packagist.org/packages/pxgamer/changelly
 [link-author]: https://github.com/pxgamer
 [link-contributors]: ../../contributors
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpxgamer%2Fchangelly.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpxgamer%2Fchangelly?ref=badge_large)
