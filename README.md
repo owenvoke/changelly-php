@@ -9,14 +9,6 @@
 
 A PHP wrapper for the [Changelly] API.
 
-## Structure
-
-```
-src/
-tests/
-vendor/
-```
-
 ## Install
 
 Via Composer
