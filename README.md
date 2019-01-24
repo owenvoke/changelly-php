@@ -114,15 +114,15 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 [ico-version]: https://img.shields.io/packagist/v/pxgamer/changelly.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/pxgamer/changelly/master.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/pxgamer/changelly-php/master.svg?style=flat-square
 [ico-styleci]: https://styleci.io/repos/114899505/shield
-[ico-code-quality]: https://img.shields.io/codecov/c/github/pxgamer/changelly.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/codecov/c/github/pxgamer/changelly-php.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/pxgamer/changelly.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/pxgamer/changelly
-[link-travis]: https://travis-ci.org/pxgamer/changelly
+[link-travis]: https://travis-ci.org/pxgamer/changelly-php
 [link-styleci]: https://styleci.io/repos/114899505
-[link-code-quality]: https://codecov.io/gh/pxgamer/changelly
+[link-code-quality]: https://codecov.io/gh/pxgamer/changelly-php
 [link-downloads]: https://packagist.org/packages/pxgamer/changelly
 [link-author]: https://github.com/pxgamer
 [link-contributors]: ../../contributors
