@@ -1,8 +1,8 @@
 # Changelog
 
-All notable changes to `changelly` will be documented in this file.
+All notable changes to `changelly-php` will be documented in this file.
 
-Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
+Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com) principles.
 
 ## v1.0.1 - 2018-01-02
 
